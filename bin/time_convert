@@ -1,0 +1,6 @@
+require 'time_convert'
+
+time = Time.new
+time_now = time.strftime("%I%M%p").to_s
+puts "The current time is #{time_now}"
+puts "...in miltary time is "+TimeConvert.convert_to_24_hour(time_now)
